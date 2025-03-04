@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAFTAR EKSKUL EKSTERNAL</title>
+
+    <!-- Cool Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- NAV BAR -->
+
+        <div class="logo">
+            <img class="img-content" src="logo abu dzar-02.png"  />
+        </div>
+        <div class="title">
+            <li class="title1">Form Daftar</li>
+            <li class="title2">Ekskul Eksternal</li>
+            <li class="title3">Tahun Pelajaran 2025/2026</li>
+        </div>
+
+        <button class="toggle-btn" id="toggleDaftar">Form Pendaftaran</button>
+        <form id="formDaftar" class="hidden visible">
+            <label class="nama">
+                <input class="nama1" type="nama" id="aNama" placeholder="NAMA (Contoh Abu Dzar)" required>
+            </label>
+            
+            <!-- DROPDOWN KELAS LAMA -->
+            
+            <label class="kelas-lama">
+                <select class="kelas-lama-dropdown" id="bkelasLama" required>
+                    <option value="">KELAS LAMA</option>
+                    <option value="None">None</option>
+                    <option value="1 Abu Bakar">1 Abu Bakar</option>
+                    <option value="1 Umar">1 Umar</option>
+                    <option value="1 Utsman">1 Utsman</option>
+                    <option value="1 Ali">1 Ali</option>
+                    <option value="1 Aisyah">1 Aisyah</option>
+                    <option value="1 Fathimah">1 Fathimah</option>
+                    <option value="1 Khadijah">1 Khadijah</option>
+                    <option value="2 Makkah">2 Makkah</option>
+                    <option value="2 Madinah">2 Madinah</option>
+                    <option value="2 Al Quds">2 Al Quds</option>
+                    <option value="2 Istanbul">2 Istanbul</option>
+                    <option value="2 Andalusia">2 Andalusia</option>
+                    <option value="2 Baghdad">2 Baghdad</option>
+                    <option value="2 Cordova">2 Cordova</option>
+                    <option value="3 Badr">3 Badr</option>
+                    <option value="3 Uhud">3 Uhud</option>
+                    <option value="3 Khaibar">3 Khaibar</option>
+                    <option value="3 Tabuk">3 Tabuk</option>
+                    <option value="3 Hudaibiyyah">3 Hudaibiyyah</option>
+                    <option value="3 Hunain">3 Hunain</option>
+                    <option value="3 Khandaq">3 Khandaq</option>
+                    <option value="4 Bukhori">4 Bukhori</option>
+                    <option value="4 Muslim">4 Muslim</option>
+                    <option value="4 Abu Dawud">4 Abu Dawud</option>
+                    <option value="4 Al Bayhaqi">4 Al Bayhaqi</option>
+                    <option value="4 An Nasa'i">4 An Nasa'i</option>
+                    <option value="4 At Tirmidzi">4 At Tirmidzi</option>
+                    <option value="4 Ibnu Majah">4 Ibnu Majah</option>
+                    <option value="5 Firdaus">5 Firdaus</option>
+                    <option value="5 Na'im">5 5 Naim</option>
+                    <option value="5 Darussalam">5 Darussalam</option>
+                    <option value="5 Ma'wa">5 Ma'wa</option>
+                    <option value="5 'Adn'">5 'Adn'</option>
+                    <option value="5 Darul Muqamah">5 Darul Muqamah</option>
+                </select>
+            </label>
+            
+            <!-- DROPDOWN KELAS BARU -->
+            
+            <label class="kelas-baru">
+                <select class="kelas-baru-dropdown" id="ckelasBaru" required>
+                    <option value="">KELAS BARU</option>
+                    <option value="1 Abu Bakar">1 Abu Bakar</option>
+                    <option value="1 Umar">1 Umar</option>
+                    <option value="1 Utsman">1 Utsman</option>
+                    <option value="1 Ali">1 Ali</option>
+                    <option value="1 Aisyah">1 Aisyah</option>
+                    <option value="1 Fathimah">1 Fathimah</option>
+                    <option value="1 Khadijah">1 Khadijah</option>
+                    <option value="2 Makkah">2 Makkah</option>
+                    <option value="2 Madinah">2 Madinah</option>
+                    <option value="2 Al Quds">2 Al Quds</option>
+                    <option value="2 Istanbul">2 Istanbul</option>
+                    <option value="2 Andalusia">2 Andalusia</option>
+                    <option value="2 Baghdad">2 Baghdad</option>
+                    <option value="2 Cordova">2 Cordova</option>
+                    <option value="3 Badr">3 Badr</option>
+                    <option value="3 Uhud">3 Uhud</option>
+                    <option value="3 Khaibar">3 Khaibar</option>
+                    <option value="3 Tabuk">3 Tabuk</option>
+                    <option value="3 Hudaibiyyah">3 Hudaibiyyah</option>
+                    <option value="3 Hunain">3 Hunain</option>
+                    <option value="3 Khandaq">3 Khandaq</option>
+                    <option value="4 Bukhori">4 Bukhori</option>
+                    <option value="4 Muslim">4 Muslim</option>
+                    <option value="4 Abu Dawud">4 Abu Dawud</option>
+                    <option value="4 Al Bayhaqi">4 Al Bayhaqi</option>
+                    <option value="4 An Nasa'i">4 An Nasa'i</option>
+                    <option value="4 At Tirmidzi">4 At Tirmidzi</option>
+                    <option value="4 Ibnu Majah">4 Ibnu Majah</option>
+                    <option value="5 Firdaus">5 Firdaus</option>
+                    <option value="5 Na'im">5 5 Naim</option>
+                    <option value="5 Darussalam">5 Darussalam</option>
+                    <option value="5 Ma'wa">5 Ma'wa</option>
+                    <option value="5 'Adn">5 'Adn</option>
+                    <option value="5 Darul Muqamah">5 Darul Muqamah</option>
+                    <option value="6 Abu Hanifah">6 Abu Hanifah</option>
+                    <option value="6 Ahmad bin Hambal">6 Adn</option>
+                    <option value="6 Sufyan Ats Tsaury">6 Sufyan Ats Tsaury</option>
+                    <option value="6 Malik">6 Malik</option>
+                    <option value="6 Syafi'i">6 Syafi'i</option>
+                    <option value="6 Al Laitsy">6 Al Laitsy</option>
+                </select>
+            </label>
+
+            <!-- DROPDOWN EKSKUL -->
+
+            <label class="ekskul">
+                <select class="ekskul-dropdown" id="dEkskul" required>
+                    <option value="">EKSTRA KULIKULER</option>
+                    <option value="FUTSAL">FUTSAL</option>
+                    <option value="BASKET">BASKET</option>
+                    <option value="PANAHAN">PANAHAN</option>
+                    <option value="PENCAK SILAT">PENCAK SILAT</option>
+                    <option value="TAEKWONDO">TAEKWONDO</option>
+                    <option value="RENANG">RENANG</option>
+                </select>
+            </label>
+            
+            <!-- LIHAT DESIGN JERSEY -->
+
+            <label class="design">
+                <a class="design-jersey"  href="#" target="_blank">Lihat Design & Size Chart</a>
+            </label>
+
+            <!-- DROPDOWN UKURAN JERSEY -->
+
+            <label class="jersey">
+                <select class="jersey-dropdown" id="esizeJersey" required>
+                    <option value="">SIZE JERSEY</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </label>
+
+            <!-- CEKLIST BIAYA -->
+
+            <div class="biaya">
+                <li class="lunas-daftar">Biaya Pendaftaran (Rp. 100.000,-)</li>
+                <div class="checkbox-biaya">
+                    <input class="lunas-biaya" type="checkbox" id="lunasDaftar">
+                    <label class="checkbox-lunas-biaya" for="lunasDaftar">Lunas</label>
+                </div>
+            </div>
+            
+            <div class="biaya-jersey">
+                <li class="biaya-text">Biaya Jersey (Rp. 200.000,-)</li>
+                <div class="checkbox-jersey">
+                    <input class="lunas-jersey" type="checkbox" id="lunasJersey">
+                    <label class="checkbox-lunas-jersey" for="lunasJersey">Lunas</label>
+                </div>
+            </div>
+
+            <!-- SUBMIT DATA -->
+
+            <div class="form-buttons">
+                <button class="btn save-btn" type="submit" id="saveButton">Save</button>
+            <button class="btn cancel-btn" type="button" id="cancelButton">Cancel</button>
+            </div>
+        </form>
+
+        <button class="toggle-btn" id="toggleUpload">Upload Bukti Pembayaran</button>
+        <form id="formUpload" class="hidden">
+            <a class="label-nama" href="https://www.appsheet.com/start/886e1ad5-8e91-4026-b5f4-03214541be35">Upload Bukti Pembayaran</a>
+        </form>
+    </div>
+    
+    <!-- copyright -->
+    
+    <footer class="container-co">
+        <li class="li-co">@2025 All Rights Reserved</li>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
